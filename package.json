@@ -1,7 +1,7 @@
 {
-    "name": "gchar",
+    "name": "@msyavuz/gchar",
     "version": "1.0.0",
-    "description": "get special characters from command line",
+    "description": "Get special characters from command line",
     "bin": {
         "gchar": "./dist/index.js"
     },
@@ -10,8 +10,11 @@
         "dev": "tsc -w",
         "link-cli": "chmod +x ./dist/index.js && pnpm unlink --global && pnpm link --global"
     },
-    "author": "",
+    "keywords": ["cli", "special characters", "turkish"],
+    "author": "Mehmet Salih Yavuz",
     "license": "ISC",
+    "repository": "https://github.com/msyavuz/gchar",
+    "homepage": "https://github.com/msyavuz/gchar",
     "devDependencies": {
         "@types/node": "^20.5.0",
         "@types/prompts": "^2.4.4",
