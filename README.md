@@ -10,3 +10,5 @@ layout is English. Feel free to use and contribute.
 `npm install -g @msyavuz/gchar`
 
 # Usage
+
+Run `gchar`
