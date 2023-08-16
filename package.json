@@ -7,8 +7,9 @@
     },
     "main": "index.js",
     "scripts": {
-        "dev": "tsc -w",
-        "link-cli": "chmod +x ./dist/index.js && pnpm unlink --global && pnpm link --global"
+        "link-cli": "chmod +x ./dist/index.js && pnpm unlink --global && pnpm link --global",
+        "tsc": "find src -type f -exec sed -i \"1s/\\/\\/\\ \\@ts\\-shebang/\\#\\!\\/usr\\/bin\\/env\\ node/\" {} +;tsc;find src -type f -exec sed -i \"1s/\\#\\!\\/usr\\/bin\\/env\\ node/\\/\\/\\ \\@ts\\-shebang/\" {} +",
+        "dev": "tsc -w"
     },
     "keywords": ["cli", "special characters", "turkish"],
     "author": "Mehmet Salih Yavuz",

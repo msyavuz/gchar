@@ -1,9 +1,8 @@
-#!/usr/bin/env node
+// @ts-shebang
 
 import { Command } from "commander";
 import prompts from "prompts";
 import clipboard from "clipboardy";
-import { ExecFileException } from "child_process";
 
 const program = new Command();
 
