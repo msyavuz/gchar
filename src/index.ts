@@ -44,7 +44,9 @@ program
             console.log(error.message);
         });
     })
-    .argument("char", "character to get special versions of")
+    .argument("<char>", "character to get special versions of")
     .description("Get special versions of a character");
+
+if (!process.argv.length) program.outputHelp();
 
 program.parse(process.argv);
