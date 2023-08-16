@@ -47,6 +47,8 @@ program
     .argument("<char>", "character to get special versions of")
     .description("Get special versions of a character");
 
-if (!process.argv.length) program.outputHelp();
-
-program.parse(process.argv);
+if (process.argv.length != 3) {
+    program.outputHelp();
+} else {
+    program.parse(process.argv);
+}
